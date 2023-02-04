@@ -1,0 +1,6 @@
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    City Name: <input type="text" name="city_name"><br><br>
+    CSV File: <input type="file" name="csv_file">
+    <input type="submit" value="Import">
+</form>
